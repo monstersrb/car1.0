@@ -1,0 +1,69 @@
+.car {
+    display: flex;
+    justify-content: center;
+}
+
+.car_body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.car_font {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(147, 8, 228);
+    border-radius: 20px 0px 0px 0px;
+}
+
+.car_back {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(147, 8, 228);
+    border-radius: 50px 200px 0px 0px;
+}
+
+.car_wheel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wheel_1, .wheel_2 {
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    border-radius: 100px;
+    position: relative;
+    bottom: 60px;
+    animation: rotation 2s infinite linear;
+}
+
+hr {
+    width: 116px;
+    border: 2px solid rgb(147, 8, 228);
+    position: relative;
+    top: 50px;
+}
+
+@keyframes rotation{
+    from {
+        transform: rotate(359deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.road_box {
+    display: flex;
+    justify-content: center;
+}
+
+.road {
+    width: 100%;
+    height: 10px;
+    margin: 0px;
+    background-color: black;
+    position: relative;
+    bottom: 60px;
+}
